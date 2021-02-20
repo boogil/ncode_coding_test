@@ -1,0 +1,43 @@
+{
+  "id": 100,
+  "orderAt": "2020-08-08 12:13:14",
+  "amount": 363000,
+  "products": [
+    {
+      "id": 51,
+      "name": "20SS RED HEART ZIP UP HOODIE BLACK P1T172",
+      "price": 228000,
+      "imageUrls": [
+        "https://dcode-prod-bucket.s3.ap-northeast-2.amazonaws.com/2020-08-03/product/1596461753-33a120a608b54fef.jpg",
+        "https://dcode-prod-bucket.s3.ap-northeast-2.amazonaws.com/2020-08-03/product/1596461754-3ec3ec75f00549cd.jpg"
+      ],
+      "stock": {
+        "color": "BLACK",
+        "size": "M",
+        "quantity": 1
+      }
+    },
+    {
+      "id": 83,
+      "name": "20SS STAMP SWEATSHIRT BLUE COECQ H27580 IAA",
+      "price": 132000,
+      "imageUrls": [
+        "https://dcode-prod-bucket.s3.ap-northeast-2.amazonaws.com/2020-08-03/product/1596459873-6e68a44d036a410b.jpg",
+        "https://dcode-prod-bucket.s3.ap-northeast-2.amazonaws.com/2020-08-03/product/1596459875-3c22afb897f24237.jpg"
+      ],
+      "stock": {
+        "color": "BLUE",
+        "size": "M",
+        "quantity": 1
+      }
+    }
+  ],
+  "shipping": {
+    "id": 8,
+    "trackingNumber": "T08912739410",
+    "shippingFee": 3000,
+    "address": "서울시 강남구 선릉로 111길 6",
+    "post": "06103",
+    "message": "안전한 배송 부탁드립니다."
+  }
+}
