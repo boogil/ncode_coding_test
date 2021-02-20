@@ -2,7 +2,7 @@
   "id": 100,
   "orderAt": "2020-08-08 12:13:14",
   "amount": 363000,
-  "ships" : [
+  "ships_2" : [
     {
       "id": 8,
       "trackingNumber": "T08912739410",
