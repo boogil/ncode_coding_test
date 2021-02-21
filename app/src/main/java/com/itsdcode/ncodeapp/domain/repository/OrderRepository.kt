@@ -26,8 +26,8 @@ class OrderRepository @Inject constructor(
                     // (1) fetch json
                     fetchMyOrder { json ->
                         // (2) parse json
-                        parseOrder(json) { order ->
-                            this@OrderRepository.order.postValue(order)
+                        parseOrder(json) { orderEntity ->
+                            this@OrderRepository.order.postValue(orderEntity.toOrder())
                         }
                     }
                 }
@@ -54,13 +54,13 @@ class OrderRepository @Inject constructor(
     }
 
     // (2) parse json
-    private fun parseOrder(json: String, onCompleted: (order: Order) -> Unit) {
+    private fun parseOrder(json: String, onCompleted: (orderEntity: OrderEntity) -> Unit) {
 
         val orderEntity = GsonBuilder()
             .setDateFormat("yyyy-MM-dd HH:mm:ss")
             .create()
             .fromJson(json, OrderEntity::class.java)
-        onCompleted(orderEntity.toOrder())
+        onCompleted(orderEntity)
 
     }
 
